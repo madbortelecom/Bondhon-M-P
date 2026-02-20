@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bondhon - MP Society Ultimate V3 | Managed by Madbor Telecom</title>
     
-    <!-- SEO Meta Tags -->
     <meta name="description" content="এম পি বন্ধন সমিতি (MP BONDON SOMITI) - একটি অলাভজনক সামাজিক ও অর্থনৈতিক উন্নয়নের ডিজিটাল প্ল্যাটফর্ম।">
     <meta name="keywords" content="Bondhon, MP Society, Madbor Telecom, Somiti Management, Digital Savings">
     <meta name="author" content="Madbor Telecom">
     <meta property="og:title" content="Bondhon - MP Society Ultimate V3">
-    <meta property="og:description" content="একতা এবং ক্ষুদ্র সঞ্চয়ের শক্তিতে সামাজিক উন্নয়ন।">
+    <meta property="og:description" content="একতা এবং ক্ষুদ্র সঞ্চয়ের শক্তিতে সামাজিক উন্নয়ন।">
     
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -76,7 +75,6 @@
 </head>
 <body class="pb-40">
 
-    <!-- Header -->
     <header class="relative pt-10 pb-16 px-6 text-center overflow-hidden">
         <div class="absolute -top-24 left-1/2 -translate-x-1/2 w-96 h-96 bg-blue-600/20 blur-[100px] rounded-full"></div>
         <div class="relative z-10">
@@ -88,7 +86,7 @@
             <h1 class="text-5xl font-black text-white mb-2 tracking-tighter">BONDHON</h1>
             <p class="text-slate-400 text-xs font-medium tracking-[0.2em] uppercase">Unity & Prosperity Management</p>
             
-            <div class="flex justify-center gap-4 mt-8">
+            <div class="flex justify-center gap-3 mt-8 flex-wrap">
                 <button onclick="openM('madborAppsModal')" class="flex flex-col items-center group">
                     <div class="w-14 h-14 glass-card flex items-center justify-center text-2xl group-hover:scale-110 transition duration-300">🚀</div>
                     <span class="text-[10px] mt-2 font-bold text-slate-400">Madbor Apps</span>
@@ -97,6 +95,12 @@
                     <div class="w-14 h-14 glass-card flex items-center justify-center text-2xl group-hover:scale-110 transition duration-300">🌐</div>
                     <span class="text-[10px] mt-2 font-bold text-slate-400">Madbor Web</span>
                 </button>
+                
+                <a href="https://chat.whatsapp.com/YOUR_WHATSAPP_GROUP_LINK_HERE" target="_blank" class="flex flex-col items-center group">
+                    <div class="w-14 h-14 glass-card border-green-500/30 flex items-center justify-center text-2xl group-hover:scale-110 transition duration-300">💚</div>
+                    <span class="text-[10px] mt-2 font-bold text-slate-400">WhatsApp Group</span>
+                </a>
+
                 <button onclick="openM('emergencyContactsModal')" class="flex flex-col items-center group">
                     <div class="w-14 h-14 glass-card border-rose-500/30 flex items-center justify-center text-2xl group-hover:scale-110 transition duration-300">🆘</div>
                     <span class="text-[10px] mt-2 font-bold text-slate-400">Emergency</span>
@@ -107,7 +111,6 @@
 
     <main class="max-w-4xl mx-auto px-4 -mt-10 space-y-6 relative z-20">
         
-        <!-- Quick Stats -->
         <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
             <div class="glass-card p-5 border-l-4 border-l-blue-500">
                 <p class="text-[10px] text-slate-500 font-bold uppercase mb-1">সদস্য</p>
@@ -127,7 +130,6 @@
             </div>
         </div>
 
-        <!-- Main Services Grid -->
         <div class="grid grid-cols-3 md:grid-cols-6 gap-3">
             <button onclick="openM('submissionModal')" class="flex flex-col items-center glass-card p-4 hover:bg-white/10 transition">
                 <span class="text-2xl mb-1">💰</span>
@@ -155,7 +157,6 @@
             </button>
         </div>
 
-        <!-- Member Dashboard Table -->
         <div class="glass-card overflow-hidden border-white/5 shadow-2xl">
             <div class="p-5 bg-white/5 flex justify-between items-center border-b border-white/5">
                 <h3 class="font-black text-sm tracking-wide uppercase flex items-center gap-2">
@@ -182,7 +183,6 @@
             </div>
         </div>
 
-        <!-- Payment Methods -->
         <div class="glass-card p-6 text-center space-y-6">
             <div class="flex flex-wrap justify-center items-center gap-4 opacity-80">
                 <span class="text-[11px] font-black text-pink-500 bg-pink-500/10 px-3 py-1 rounded-lg">BKASH</span>
@@ -197,7 +197,6 @@
             </div>
         </div>
 
-        <!-- Info Box -->
         <div class="glass-card p-8 space-y-4">
             <h2 class="text-xl font-black text-blue-400 border-b border-blue-500/20 pb-2">এম পি বন্ধন সমিতি</h2>
             <div class="text-sm text-slate-400 leading-relaxed space-y-3">
@@ -211,7 +210,17 @@
         </div>
     </main>
 
-    <!-- Modals List -->
+    <footer class="max-w-4xl mx-auto px-4 py-8 text-center text-slate-500 text-xs space-y-4 relative z-20 mb-20">
+        <div class="flex justify-center gap-4 font-bold uppercase tracking-wider">
+            <button onclick="openM('aboutUsModal')" class="hover:text-blue-400 transition">About Us</button>
+            <span>|</span>
+            <button onclick="openM('teamsModal')" class="hover:text-blue-400 transition">Teams</button>
+            <span>|</span>
+            <button onclick="openM('privacyModal')" class="hover:text-blue-400 transition">Privacy Policy</button>
+        </div>
+        <p>© 2024 Bondhon MP Society. All rights reserved. | Managed by Madbor Telecom</p>
+    </footer>
+
     <div id="submissionModal" class="modal-overlay">
         <div class="max-w-sm mx-auto mt-20 glass-card p-8 relative">
             <button onclick="closeM('submissionModal')" class="absolute top-4 right-4 text-xl">&times;</button>
@@ -257,7 +266,7 @@
             <h3 class="text-xl font-black mb-4 text-blue-400">নিয়মাবলী</h3>
             <div class="text-xs space-y-2 text-slate-300">
                 <p>১. প্রতি মাসের ১০ তারিখের মধ্যে সঞ্চয় জমা দিতে হবে।</p>
-                <p>২. বিশেষ প্রয়োজনে ঋণ গ্রহণ করা যাবে (শর্তসাপেক্ষে)।</p>
+                <p>২. বিশেষ প্রয়োজনে ঋণ গ্রহণ করা যাবে (শর্তসাপেক্ষে)।</p>
                 <p>৩. ৩ মাস টানা কিস্তি না দিলে সদস্যপদ স্থগিত হবে।</p>
             </div>
         </div>
@@ -267,7 +276,7 @@
         <div class="max-w-sm mx-auto mt-20 glass-card p-8 relative">
             <button onclick="closeM('missionModal')" class="absolute top-4 right-4 text-xl">&times;</button>
             <h3 class="text-xl font-black mb-4 text-blue-400">আমাদের লক্ষ্য</h3>
-            <p class="text-xs text-slate-300">আমাদের মূল লক্ষ্য হলো সদস্যদের আর্থিক স্বাবলম্বী করা এবং সামাজিক ভ্রাতৃত্ব বজায় রাখা।</p>
+            <p class="text-xs text-slate-300">আমাদের মূল লক্ষ্য হলো সদস্যদের আর্থিক স্বাবলম্বী করা এবং সামাজিক ভ্রাতৃত্ব বজায় রাখা।</p>
         </div>
     </div>
 
@@ -275,7 +284,7 @@
         <div class="max-w-sm mx-auto mt-20 glass-card p-8 relative">
             <button onclick="closeM('madborAppsModal')" class="absolute top-4 right-4 text-xl">&times;</button>
             <h3 class="text-xl font-black mb-4">Madbor Apps</h3>
-            <p class="text-xs text-slate-300">আমাদের সকল ডিজিটাল অ্যাপ এখানে পাওয়া যাবে। বিস্তারিত জানতে যোগাযোগ করুন।</p>
+            <p class="text-xs text-slate-300">আমাদের সকল ডিজিটাল অ্যাপ এখানে পাওয়া যাবে। বিস্তারিত জানতে যোগাযোগ করুন।</p>
         </div>
     </div>
 
@@ -283,7 +292,7 @@
         <div class="max-w-sm mx-auto mt-20 glass-card p-8 relative">
             <button onclick="closeM('madborWebsitesModal')" class="absolute top-4 right-4 text-xl">&times;</button>
             <h3 class="text-xl font-black mb-4">Madbor Web</h3>
-            <p class="text-xs text-slate-300">আমরা আধুনিক ওয়েব সল্যুশন প্রদান করি।</p>
+            <p class="text-xs text-slate-300">আমরা আধুনিক ওয়েব সল্যুশন প্রদান করি।</p>
         </div>
     </div>
 
@@ -318,7 +327,59 @@
         </div>
     </div>
 
-    <!-- Bottom Nav Bar -->
+    <div id="aboutUsModal" class="modal-overlay">
+        <div class="max-w-sm mx-auto mt-20 glass-card p-8 relative">
+            <button onclick="closeM('aboutUsModal')" class="absolute top-4 right-4 text-xl">&times;</button>
+            <h3 class="text-xl font-black mb-4 text-blue-400">About Us</h3>
+            <p class="text-xs text-slate-300 leading-relaxed">এম পি বন্ধন সমিতি একটি ডিজিটাল প্ল্যাটফর্ম যা সমাজের সদস্যদের মধ্যে একতা এবং ক্ষুদ্র সঞ্চয়ের মাধ্যমে অর্থনৈতিক সমৃদ্ধি নিশ্চিত করতে কাজ করে। আমরা বিশ্বাস করি স্বচ্ছতা এবং সহযোগিতাই উন্নতির মূল চাবিকাঠি। আমাদের লক্ষ্য হলো প্রতিটি সদস্যকে আর্থিকভাবে স্বাবলম্বী করে তোলা।</p>
+        </div>
+    </div>
+
+    <div id="teamsModal" class="modal-overlay">
+        <div class="max-w-sm mx-auto mt-20 glass-card p-8 relative">
+            <button onclick="closeM('teamsModal')" class="absolute top-4 right-4 text-xl">&times;</button>
+            <h3 class="text-xl font-black mb-6 text-center">আমাদের টিম</h3>
+            <div class="space-y-4">
+                    <div class="flex items-center gap-3 p-3 bg-white/5 rounded-xl border border-white/5">
+                    <div class="w-10 h-10 bg-blue-500/20 rounded-full flex items-center justify-center text-xl">👨‍💼</div>
+                    <div>
+                        <h4 class="font-bold text-sm text-white">সভাপতি</h4>
+                        <p class="text-xs text-slate-400">নাম এখানে বসবে</p>
+                    </div>
+                </div>
+                    <div class="flex items-center gap-3 p-3 bg-white/5 rounded-xl border border-white/5">
+                    <div class="w-10 h-10 bg-emerald-500/20 rounded-full flex items-center justify-center text-xl">👨‍⚖️</div>
+                    <div>
+                        <h4 class="font-bold text-sm text-white">সাধারণ সম্পাদক</h4>
+                        <p class="text-xs text-slate-400">নাম এখানে বসবে</p>
+                    </div>
+                </div>
+                    <div class="flex items-center gap-3 p-3 bg-white/5 rounded-xl border border-white/5">
+                    <div class="w-10 h-10 bg-purple-500/20 rounded-full flex items-center justify-center text-xl">👨‍💻</div>
+                    <div>
+                        <h4 class="font-bold text-sm text-white">কারিগরি সহায়তা (IT)</h4>
+                        <p class="text-xs text-slate-400">মাদবর টেলিকম</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="privacyModal" class="modal-overlay">
+        <div class="max-w-sm mx-auto mt-20 glass-card p-8 relative max-h-[70vh] overflow-y-auto">
+            <button onclick="closeM('privacyModal')" class="absolute top-4 right-4 text-xl">&times;</button>
+            <h3 class="text-xl font-black mb-4 text-slate-300">Privacy Policy</h3>
+            <div class="text-xs text-slate-400 space-y-3 leading-relaxed">
+                <p><strong>তথ্য সংগ্রহ:</strong> আমরা সদস্যদের নাম, ফোন নম্বর এবং লেনদেনের তথ্য সংগ্রহ করি শুধুমাত্র সমিতির কার্যক্রম পরিচালনার জন্য।</p>
+                <p><strong>তথ্য নিরাপত্তা:</strong> আপনার সকল তথ্য গুগল ফায়ারবেস (Google Firebase) এর সুরক্ষিত সার্ভারে এনক্রিপ্ট করা অবস্থায় সংরক্ষিত থাকে।</p>
+                <p><strong>তথ্য শেয়ারিং:</strong> আমরা তৃতীয় কোনো পক্ষ বা বিজ্ঞাপনদাতার সাথে আপনার ব্যক্তিগত তথ্য শেয়ার করি না।</p>
+                <p><strong>কুকিজ:</strong> ব্যবহারকারীর অভিজ্ঞতা উন্নত করতে আমরা প্রয়োজনীয় কুকিজ ব্যবহার করতে পারি।</p>
+                <p><strong>পলিসি আপডেট:</strong> এই পলিসি যেকোনো সময় আপডেট হতে পারে, যা অ্যাপ বা ওয়েবসাইটে জানানো হবে।</p>
+                <p class="pt-2 opacity-60">(এটি একটি নমুনা পলিসি। আপনার প্রয়োজন অনুযায়ী আপডেট করুন।)</p>
+            </div>
+        </div>
+    </div>
+
     <nav class="fixed bottom-6 left-1/2 -translate-x-1/2 w-[92%] max-w-md glass-card bg-black/60 border-white/20 px-8 py-4 flex justify-between items-center z-50 shadow-[0_0_50px_rgba(0,0,0,0.5)]">
         <button onclick="location.reload()" class="text-blue-400 flex flex-col items-center">
             <span class="text-xl">🏠</span>
@@ -343,126 +404,29 @@
         import { getAuth, signInAnonymously, onAuthStateChanged, signInWithCustomToken } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
         import { getFirestore, collection, addDoc, onSnapshot, serverTimestamp, query, doc, orderBy } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
 
-        // Firebase Setup
-        import React, { useState, useEffect } from 'react';
-import { initializeApp } from 'firebase/app';
-import { getAuth, onAuthStateChanged, signInAnonymously } from 'firebase/auth';
-import { getFirestore, collection, addDoc, onSnapshot } from 'firebase/firestore';
+        // TODO: এখানে আপনার ফায়ারবেস কনফিগারেশন অবজেক্ট বসান
+        const firebaseConfig = {
+            apiKey: "YOUR_API_KEY",
+            authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
+            projectId: "YOUR_PROJECT_ID",
+            storageBucket: "YOUR_PROJECT_ID.appspot.com",
+            messagingSenderId: "YOUR_SENDER_ID",
+            appId: "YOUR_APP_ID"
+        };
 
-// ১. আপনার ফায়ারবেস কনসোল থেকে এই তথ্যগুলো সংগ্রহ করুন
-// Project Settings > General > Your Apps সেকশনে এটি পাবেন
-const firebaseConfig = {
-  apiKey: "YOUR_NEW_API_KEY", // এখানে আপনার নতুন জেনারেট করা API Key দিন
-  authDomain: "your-app-id.firebaseapp.com",
-  projectId: "your-app-id",
-  storageBucket: "your-app-id.appspot.com",
-  messagingSenderId: "1234567890",
-  appId: "1:1234567890:web:abcdef123456"
-};
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        const db = getFirestore(app);
 
-// ২. ফায়ারবেস ইনিশিয়ালাইজেশন
-const app = initializeApp(firebaseConfig);
-const auth = getAuth(app);
-const db = getFirestore(app);
+        // App ID for Firestore path (Unique identifier for this society version)
+        const appId = 'bondhon-mp-society-v3'; 
 
-// ৩. আপনার অ্যাপ আইডি (এনভায়রনমেন্ট ভেরিয়েবল থেকে নিলে ভালো)
-const appId = typeof __app_id !== 'undefined' ? __app_id : 'my-awesome-app';
+        // Global variables to hold data
+        let members = [];
+        let payments = [];
 
-export default function App() {
-  const [user, setUser] = useState(null);
-  const [messages, setMessages] = useState([]);
-  const [inputValue, setInputValue] = useState('');
-
-  // ৪. অথেন্টিকেশন হ্যান্ডলার
-  useEffect(() => {
-    const initAuth = async () => {
-      try {
-        // যদি আপনার কাছে কাস্টম টোকেন থাকে তবে সেটি ব্যবহার করবে, নয়তো অ্যানোনিমাসলি লগইন হবে
-        if (typeof __initial_auth_token !== 'undefined' && __initial_auth_token) {
-          // signInWithCustomToken(auth, __initial_auth_token);
-        } else {
-          await signInAnonymously(auth);
-        }
-      } catch (error) {
-        console.error("Auth Error:", error);
-      }
-    };
-
-    initAuth();
-    const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
-      setUser(currentUser);
-    });
-    return () => unsubscribe();
-  }, []);
-
-  // ৫. ডেটা ফেচিং (Firestore)
-  useEffect(() => {
-    if (!user) return;
-
-    // রিলেশনশিপ মেইনটেইন করার জন্য সঠিক পাথ ব্যবহার করা জরুরি (Rule 1 অনুযায়ী)
-    const q = collection(db, 'artifacts', appId, 'public', 'data', 'messages');
-    
-    const unsubscribe = onSnapshot(q, (snapshot) => {
-      const data = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
-      setMessages(data);
-    }, (error) => {
-      console.error("Firestore Error:", error);
-    });
-
-    return () => unsubscribe();
-  }, [user]);
-
-  const handleSendMessage = async () => {
-    if (!inputValue.trim() || !user) return;
-    
-    try {
-      await addDoc(collection(db, 'artifacts', appId, 'public', 'data', 'messages'), {
-        text: inputValue,
-        timestamp: Date.now(),
-        userId: user.uid
-      });
-      setInputValue('');
-    } catch (error) {
-      console.error("Send Error:", error);
-    }
-  };
-
-  return (
-    <div className="min-h-screen bg-gray-100 p-4 flex flex-col items-center">
-      <div className="w-full max-w-md bg-white rounded-xl shadow-lg p-6">
-        <h1 className="text-2xl font-bold mb-4 text-center text-blue-600">Firebase App</h1>
-        
-        <div className="mb-4 text-sm text-gray-500 text-center">
-          {user ? `Logged in as: ${user.uid}` : 'Connecting...'}
-        </div>
-
-        <div className="h-64 overflow-y-auto mb-4 border rounded p-2 bg-gray-50">
-          {messages.map((msg) => (
-            <div key={msg.id} className="mb-2 p-2 bg-blue-100 rounded">
-              {msg.text}
-            </div>
-          ))}
-        </div>
-
-        <div className="flex gap-2">
-          <input
-            type="text"
-            value={inputValue}
-            onChange={(e) => setInputValue(e.target.value)}
-            className="flex-1 border rounded px-3 py-2 outline-none focus:ring-2 focus:ring-blue-400"
-            placeholder="Type something..."
-          />
-          <button
-            onClick={handleSendMessage}
-            className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition"
-          >
-            Send
-          </button>
-        </div>
-      </div>
-    </div>
-  );
-      }
+        // Modal Control Functions (Global Scope)
         window.openM = (id) => {
             document.querySelectorAll('.modal-overlay').forEach(m => m.classList.remove('active-modal'));
             const modal = document.getElementById(id);
@@ -473,19 +437,25 @@ export default function App() {
             if(modal) modal.classList.remove('active-modal');
         }
 
+        // Authentication setup
         const initAuth = async () => {
             try {
+                // Check for custom token if available in global scope
                 if (typeof __initial_auth_token !== 'undefined' && __initial_auth_token) {
                     await signInWithCustomToken(auth, __initial_auth_token);
                 } else {
+                    // Otherwise, sign in anonymously
                     await signInAnonymously(auth);
                 }
             } catch (err) {
                 console.error("Auth Error:", err);
+                document.getElementById('sync-status').innerText = 'Auth Failed';
+                document.getElementById('sync-status').classList.replace('text-blue-400', 'text-rose-400');
             }
         };
         initAuth();
 
+        // Auth state listener to start syncing data
         onAuthStateChanged(auth, user => {
             if(user) {
                 document.getElementById('sync-status').innerText = 'Online';
@@ -493,22 +463,28 @@ export default function App() {
             }
         });
 
+        // Real-time Data Sync Function
         function startSync() {
+            // Sync Members
             onSnapshot(collection(db, 'artifacts', appId, 'public', 'data', 'members'), snap => {
                 members = snap.docs.map(d => ({id: d.id, ...d.data()}));
                 render();
             });
             
-            onSnapshot(collection(db, 'artifacts', appId, 'public', 'data', 'payments'), snap => {
-                payments = snap.docs.map(d => d.data()).sort((a,b) => b.date - a.date);
+            // Sync Payments (Ordered by date descending)
+            const paymentsQuery = query(collection(db, 'artifacts', appId, 'public', 'data', 'payments'), orderBy('date', 'desc'));
+            onSnapshot(paymentsQuery, snap => {
+                payments = snap.docs.map(d => d.data());
                 render();
             });
         }
 
+        // Registration Form Submission Handler
         document.getElementById('regForm').onsubmit = async (e) => {
             e.preventDefault();
             const btn = e.submitter;
             btn.disabled = true;
+            btn.innerHTML = 'অপেক্ষা করুন...';
             try {
                 await addDoc(collection(db, 'artifacts', appId, 'public', 'data', 'members'), {
                     name: document.getElementById('regName').value,
@@ -519,28 +495,48 @@ export default function App() {
                 });
                 closeM('registerModal');
                 e.target.reset();
-            } catch (err) { console.error(err); }
+                alert('সদস্য নিবন্ধন সফল হয়েছে!');
+            } catch (err) { 
+                console.error(err);
+                alert('নিবন্ধন ব্যর্থ হয়েছে। আবার চেষ্টা করুন।');
+            }
             btn.disabled = false;
+            btn.innerHTML = 'রেজিস্ট্রেশন করুন';
         };
 
+        // Payment Submission Form Handler
         document.getElementById('paymentForm').onsubmit = async (e) => {
             e.preventDefault();
             const btn = e.submitter;
+            const memberPhone = document.getElementById('payMember').value;
+            
+            if(!memberPhone) {
+                alert('দয়া করে একজন সদস্য নির্বাচন করুন।');
+                return;
+            }
+
             btn.disabled = true;
+            btn.innerHTML = 'প্রসেসিং...';
             try {
                 await addDoc(collection(db, 'artifacts', appId, 'public', 'data', 'payments'), {
-                    phone: document.getElementById('payMember').value,
+                    phone: memberPhone,
                     amount: parseFloat(document.getElementById('payAmount').value),
-                    txid: document.getElementById('payTx').value.toUpperCase(),
+                    txid: document.getElementById('payTx').value.toUpperCase().trim(),
                     date: Date.now(),
                     timestamp: serverTimestamp()
                 });
                 closeM('submissionModal');
                 e.target.reset();
-            } catch (err) { console.error(err); }
+                alert('পেমেন্ট জমা সফল হয়েছে!');
+            } catch (err) { 
+                console.error(err);
+                alert('পেমেন্ট জমা ব্যর্থ হয়েছে।');
+            }
             btn.disabled = false;
+            btn.innerHTML = 'কনফার্ম পেমেন্ট';
         };
 
+        // Main Render Function (Updates UI based on data)
         function render() {
             document.getElementById('loader')?.classList.add('hidden');
             const tbody = document.getElementById('member-table-body');
@@ -551,67 +547,82 @@ export default function App() {
             const currentSel = select.value;
             select.innerHTML = '<option value="">সদস্য সিলেক্ট করুন</option>';
 
-            // Table Render
-            tbody.innerHTML = members.map(m => {
-                const paid = payments.filter(p => p.phone === m.phone).reduce((s, p) => s + p.amount, 0);
-                const joinTime = m.joinDate || Date.now();
-                const monthsElapsed = Math.max(1, Math.ceil((Date.now() - joinTime) / (1000*60*60*24*30.44)));
-                const monthlyPlan = m.plan || 500;
-                const targetAmount = monthsElapsed * monthlyPlan;
-                const dueAmount = targetAmount - paid;
-                const dueMonthsCount = Math.max(0, Math.ceil(dueAmount / monthlyPlan));
-                
-                tColl += paid; tFund += targetAmount; if(dueAmount > 0) tDue += dueAmount;
+            // 1. Render Member Table & Populate Select Dropdown
+            if (members.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="4" class="text-center py-4 text-slate-500">কোন সদস্য নেই</td></tr>';
+            } else {
+                tbody.innerHTML = members.map(m => {
+                    // Calculate financials for each member
+                    const paid = payments.filter(p => p.phone === m.phone).reduce((s, p) => s + (p.amount || 0), 0);
+                    const joinTime = m.joinDate || Date.now();
+                    // Approximate months elapsed since joining (30.44 days average month)
+                    const monthsElapsed = Math.max(1, Math.ceil((Date.now() - joinTime) / (1000*60*60*24*30.44)));
+                    const monthlyPlan = m.plan || 500;
+                    const targetAmount = monthsElapsed * monthlyPlan;
+                    const dueAmount = targetAmount - paid;
+                    const dueMonthsCount = Math.max(0, Math.ceil(dueAmount / monthlyPlan));
+                    
+                    // Update aggregate stats
+                    tColl += paid; 
+                    tFund += targetAmount; 
+                    if(dueAmount > 0) tDue += dueAmount;
 
-                const opt = document.createElement('option');
-                opt.value = m.phone; opt.text = m.name;
-                if(m.phone === currentSel) opt.selected = true;
-                select.add(opt);
+                    // Populate payment select option
+                    const opt = document.createElement('option');
+                    opt.value = m.phone; 
+                    opt.text = `${m.name} (${m.phone})`;
+                    opt.classList.add('text-black'); // Ensure dropdown options are visible
+                    if(m.phone === currentSel) opt.selected = true;
+                    select.add(opt);
 
-                return `
-                    <tr class="hover:bg-white/5 transition">
-                        <td class="px-6 py-5">
-                            <div class="font-bold text-white">${m.name}</div>
-                            <div class="text-[9px] text-slate-500 font-medium">${m.phone}</div>
-                        </td>
-                        <td class="px-6 py-5">
-                            <div class="font-black text-emerald-400">৳${paid}</div>
-                        </td>
-                        <td class="px-6 py-5">
-                            <div class="text-[11px] font-bold ${dueMonthsCount > 0 ? 'text-rose-400' : 'text-slate-500'}">
-                                ${dueMonthsCount > 0 ? dueMonthsCount + ' মাসের কিস্তি' : 'বকেয়া নেই'}
-                            </div>
-                        </td>
-                        <td class="px-6 py-5 text-right">
-                            <span class="status-badge ${dueAmount <= 0 ? 'bg-emerald-500/10 text-emerald-500' : 'bg-rose-500/10 text-rose-500'}">
-                                ${dueAmount <= 0 ? 'পরিশোধিত' : 'বাকি ৳' + dueAmount}
-                            </span>
-                        </td>
-                    </tr>`;
-            }).join('');
+                    // Generate table row HTML
+                    return `
+                        <tr class="hover:bg-white/5 transition border-b border-white/5">
+                            <td class="px-6 py-5">
+                                <div class="font-bold text-white">${m.name}</div>
+                                <div class="text-[9px] text-slate-500 font-medium">${m.phone}</div>
+                            </td>
+                            <td class="px-6 py-5">
+                                <div class="font-black text-emerald-400">৳${paid.toLocaleString('bn-BD')}</div>
+                            </td>
+                            <td class="px-6 py-5">
+                                <div class="text-[11px] font-bold ${dueMonthsCount > 0 ? 'text-rose-400' : 'text-slate-500'}">
+                                    ${dueMonthsCount > 0 ? dueMonthsCount.toLocaleString('bn-BD') + ' মাসের কিস্তি' : 'বকেয়া নেই'}
+                                </div>
+                            </td>
+                            <td class="px-6 py-5 text-right">
+                                <span class="status-badge ${dueAmount <= 0 ? 'bg-emerald-500/10 text-emerald-500' : 'bg-rose-500/10 text-rose-500'}">
+                                    ${dueAmount <= 0 ? 'পরিশোধিত' : 'বাকি ৳' + dueAmount.toLocaleString('bn-BD')}
+                                </span>
+                            </td>
+                        </tr>`;
+                }).join('');
+            }
 
-            // History Render
+            // 2. Render History
             historyBox.innerHTML = payments.length > 0 ? payments.map(p => {
-                const mName = members.find(m => m.phone === p.phone)?.name || 'Unknown';
+                const mName = members.find(m => m.phone === p.phone)?.name || 'Unknown Member';
                 return `
-                    <div class="p-4 bg-white/5 rounded-xl border border-white/5 flex justify-between items-center">
+                    <div class="p-4 bg-white/5 rounded-xl border border-white/5 flex justify-between items-center transition hover:bg-white/10">
                         <div>
                             <p class="text-xs font-bold text-white">${mName}</p>
-                            <p class="text-[9px] text-slate-500">Trx: ${p.txid}</p>
-                            <p class="text-[8px] text-blue-400">${new Date(p.date).toLocaleString('bn-BD')}</p>
+                            <p class="text-[9px] text-slate-500">Trx: ${p.txid || 'N/A'}</p>
+                            <p class="text-[8px] text-blue-400">${p.date ? new Date(p.date).toLocaleString('bn-BD') : ''}</p>
                         </div>
                         <div class="text-right">
-                            <p class="text-emerald-400 font-black">৳${p.amount}</p>
+                            <p class="text-emerald-400 font-black">৳${(p.amount || 0).toLocaleString('bn-BD')}</p>
                             <p class="text-[8px] bg-emerald-500/10 text-emerald-500 px-2 rounded-full inline-block">Success</p>
                         </div>
                     </div>`;
-            }).join('') : '<p class="text-center text-slate-500 text-xs">কোনো লেনদেন পাওয়া যায়নি</p>';
+            }).join('') : '<p class="text-center text-slate-500 text-xs py-4">কোনো লেনদেন পাওয়া যায়নি</p>';
 
-            // Stats Update
-            document.getElementById('stat-members').innerText = members.length;
-            document.getElementById('stat-total-paid').innerText = '৳' + tColl;
-            document.getElementById('stat-total-fund').innerText = '৳' + tFund;
-            document.getElementById('stat-total-due').innerText = '৳' + tDue;
+            // 3. Update Quick Stats
+            document.getElementById('stat-members').innerText = members.length.toLocaleString('bn-BD');
+            document.getElementById('stat-total-paid').innerText = '৳' + tColl.toLocaleString('bn-BD');
+            // Total Fund is what *should* have been collected, or you might want to show current balance (tColl). 
+            // Using tFund as "Target Fund" based on your previous logic.
+            document.getElementById('stat-total-fund').innerText = '৳' + tFund.toLocaleString('bn-BD');
+            document.getElementById('stat-total-due').innerText = '৳' + tDue.toLocaleString('bn-BD');
         }
     </script>
 </body>
